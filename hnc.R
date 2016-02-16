@@ -2,7 +2,7 @@ require(MASS)
 require(mvtnorm)
 
 # Read handwritten digits data
-myData=read.csv("C:\\Users\\Juliana Yeh\\Documents\\semeion.csv",header=FALSE)
+myData=read.csv("semeion.csv",header=FALSE)
 # Build data matrix with (thresholded) pixel and label data
 myX=data.matrix(myData[,1:256])
 myLabel=apply(myData[,257:266],1,function(xx){
